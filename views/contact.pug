@@ -1,0 +1,36 @@
+html
+  head
+    title= title
+    style 
+      include ../static/style.css
+  body 
+    nav#navbar 
+
+       #logo 
+         img(src="/static/IMG2.png", alt="", srcset="")
+       ul 
+        li 
+         a(href="/") Home
+        li 
+         a(href="/") About
+        li 
+         a(href="/contact") Contact
+        li 
+         a(href="/") Service
+    
+    .container 
+        form(action="", method="post" id="myInput")
+          input(type="text", name="name" placeholder="Enter Your Name") 
+          input(type="number", name="age" placeholder="Enter Your Age") 
+          input(type="email", name="email" placeholder="Enter Your Email") 
+          select(name="gender")
+           option(value="Male") Male 
+           option(value="Female") Female
+          textarea(name="text", cols="30", rows="7") Enter Your Concern
+          button(type="submit" id="btn") Submit
+
+    footer#footer
+        p Copyrights &copy; 2022 | All Rights Reserved
+
+    script
+       include ../static/script.js 
